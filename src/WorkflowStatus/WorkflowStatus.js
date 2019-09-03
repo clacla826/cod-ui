@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import ArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import WorkflowStatusItem from '../WorkflowStatusItem';
@@ -12,30 +11,39 @@ import useStyles from './styles';
  *
  * @example ./__docs__/WorkflowStatus.md
  */
-const WorkflowStatus = ({ status, label }) => {
+const WorkflowStatus = ({ status }) => {
   const classes = useStyles();
 
   return (
     <Grid item className={classes.grow}>
-      <Grid container>
-        {label && (
-          <Typography
-            data-testid="workflow-label"
-            className={classes.label}
-            variant="overline"
-            gutterBottom
-          >
-            {label}
-          </Typography>
-        )}
-
-        <WorkflowStatusItem title="Declined" active={status === 'declined'} status="declined" />
+      <Grid container justify="space-evenly" wrap="nowrap">
+        <WorkflowStatusItem
+          title="Declined"
+          active={status === 'declined'}
+          status="declined"
+          caption="Proposal has been rejected by the parties."
+        />
         <ArrowLeftIcon className={classes.arrow} />
-        <WorkflowStatusItem title="Draft" active={status === 'draft'} status="draft" />
+        <WorkflowStatusItem
+          title="Draft"
+          active={status === 'draft'}
+          status="draft"
+          caption="Proposal is in writing stage, not yet submitted for an approval."
+        />
         <ArrowRightIcon className={classes.arrow} />
-        <WorkflowStatusItem title="Pending" active={status === 'pending'} status="pending" />
+        <WorkflowStatusItem
+          title="Pending"
+          active={status === 'pending'}
+          status="pending"
+          caption="Proposal is being vetted by the parties."
+        />
         <ArrowRightIcon className={classes.arrow} />
-        <WorkflowStatusItem title="Accepted" active={status === 'accepted'} status="accepted" />
+        <WorkflowStatusItem
+          title="Accepted"
+          active={status === 'accepted'}
+          status="accepted"
+          caption="Proposal has been accepted and become an agreement."
+        />
       </Grid>
     </Grid>
   );
@@ -43,11 +51,6 @@ const WorkflowStatus = ({ status, label }) => {
 
 WorkflowStatus.propTypes = {
   status: PropTypes.string.isRequired,
-  label: PropTypes.string,
-};
-
-WorkflowStatus.defaultProps = {
-  label: null,
 };
 
 export default WorkflowStatus;

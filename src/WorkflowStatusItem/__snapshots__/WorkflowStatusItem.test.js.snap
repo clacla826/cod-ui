@@ -2,10 +2,25 @@
 
 exports[`WorkflowStatusItem matches the snapshot 1`] = `
 <div>
-  <span
-    class="MuiTypography-root makeStyles-active-1 makeStyles-draftStatus-4 MuiTypography-overline MuiTypography-gutterBottom"
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-2 makeStyles-active-1 makeStyles-draftStatus-5 MuiPaper-rounded"
   >
-    test
-  </span>
+    <div
+      class="MuiCardContent-root makeStyles-content-8"
+    >
+      <span
+        class="MuiTypography-root makeStyles-active-1 makeStyles-draftStatus-5 MuiTypography-overline"
+      >
+        test
+      </span>
+    </div>
+    <div
+      class="MuiCardContent-root makeStyles-content-8 makeStyles-caption-9"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-caption"
+      />
+    </div>
+  </div>
 </div>
 `;

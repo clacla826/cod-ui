@@ -3,25 +3,36 @@
 exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root makeStyles-grow-4 MuiGrid-item"
+    class="MuiGrid-root makeStyles-grow-2 MuiGrid-item"
   >
     <div
-      class="MuiGrid-root MuiGrid-container"
+      class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-justify-xs-space-evenly"
     >
-      <span
-        class="MuiTypography-root makeStyles-label-2 MuiTypography-overline MuiTypography-gutterBottom"
-        data-testid="workflow-label"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-107 makeStyles-inactive-108 makeStyles-declinedStatus-109 MuiPaper-rounded"
       >
-        Agreement Status
-      </span>
-      <span
-        class="MuiTypography-root makeStyles-inactive-139 makeStyles-declinedStatus-140 MuiTypography-overline MuiTypography-gutterBottom"
-      >
-        Declined
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-113"
+        >
+          <span
+            class="MuiTypography-root makeStyles-inactive-108 makeStyles-declinedStatus-109 MuiTypography-overline"
+          >
+            Declined
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-113 makeStyles-caption-114"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal has been rejected by the parties.
+          </span>
+        </div>
+      </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root makeStyles-arrow-3"
+        class="MuiSvgIcon-root makeStyles-arrow-1"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -34,14 +45,31 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
           fill="none"
         />
       </svg>
-      <span
-        class="MuiTypography-root makeStyles-active-138 makeStyles-draftStatus-141 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-107 makeStyles-active-106 makeStyles-draftStatus-110 MuiPaper-rounded"
       >
-        Draft
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-113"
+        >
+          <span
+            class="MuiTypography-root makeStyles-active-106 makeStyles-draftStatus-110 MuiTypography-overline"
+          >
+            Draft
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-113 makeStyles-caption-114"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal is in writing stage, not yet submitted for an approval.
+          </span>
+        </div>
+      </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root makeStyles-arrow-3"
+        class="MuiSvgIcon-root makeStyles-arrow-1"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -54,14 +82,31 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
           fill="none"
         />
       </svg>
-      <span
-        class="MuiTypography-root makeStyles-inactive-139 makeStyles-pendingStatus-142 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-107 makeStyles-inactive-108 makeStyles-pendingStatus-111 MuiPaper-rounded"
       >
-        Pending
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-113"
+        >
+          <span
+            class="MuiTypography-root makeStyles-inactive-108 makeStyles-pendingStatus-111 MuiTypography-overline"
+          >
+            Pending
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-113 makeStyles-caption-114"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal is being vetted by the parties.
+          </span>
+        </div>
+      </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root makeStyles-arrow-3"
+        class="MuiSvgIcon-root makeStyles-arrow-1"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -74,11 +119,28 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
           fill="none"
         />
       </svg>
-      <span
-        class="MuiTypography-root makeStyles-inactive-139 makeStyles-acceptedStatus-143 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-107 makeStyles-inactive-108 makeStyles-acceptedStatus-112 MuiPaper-rounded"
       >
-        Accepted
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-113"
+        >
+          <span
+            class="MuiTypography-root makeStyles-inactive-108 makeStyles-acceptedStatus-112 MuiTypography-overline"
+          >
+            Accepted
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-113 makeStyles-caption-114"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal has been accepted and become an agreement.
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -87,19 +149,36 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
 exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root makeStyles-grow-156 MuiGrid-item"
+    class="MuiGrid-root makeStyles-grow-184 MuiGrid-item"
   >
     <div
-      class="MuiGrid-root MuiGrid-container"
+      class="MuiGrid-root MuiGrid-container MuiGrid-wrap-xs-nowrap MuiGrid-justify-xs-space-evenly"
     >
-      <span
-        class="MuiTypography-root makeStyles-inactive-261 makeStyles-declinedStatus-262 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-289 makeStyles-inactive-290 makeStyles-declinedStatus-291 MuiPaper-rounded"
       >
-        Declined
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-295"
+        >
+          <span
+            class="MuiTypography-root makeStyles-inactive-290 makeStyles-declinedStatus-291 MuiTypography-overline"
+          >
+            Declined
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-295 makeStyles-caption-296"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal has been rejected by the parties.
+          </span>
+        </div>
+      </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root makeStyles-arrow-155"
+        class="MuiSvgIcon-root makeStyles-arrow-183"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -112,14 +191,31 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
           fill="none"
         />
       </svg>
-      <span
-        class="MuiTypography-root makeStyles-active-260 makeStyles-draftStatus-263 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-289 makeStyles-active-288 makeStyles-draftStatus-292 MuiPaper-rounded"
       >
-        Draft
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-295"
+        >
+          <span
+            class="MuiTypography-root makeStyles-active-288 makeStyles-draftStatus-292 MuiTypography-overline"
+          >
+            Draft
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-295 makeStyles-caption-296"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal is in writing stage, not yet submitted for an approval.
+          </span>
+        </div>
+      </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root makeStyles-arrow-155"
+        class="MuiSvgIcon-root makeStyles-arrow-183"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -132,14 +228,31 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
           fill="none"
         />
       </svg>
-      <span
-        class="MuiTypography-root makeStyles-inactive-261 makeStyles-pendingStatus-264 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-289 makeStyles-inactive-290 makeStyles-pendingStatus-293 MuiPaper-rounded"
       >
-        Pending
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-295"
+        >
+          <span
+            class="MuiTypography-root makeStyles-inactive-290 makeStyles-pendingStatus-293 MuiTypography-overline"
+          >
+            Pending
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-295 makeStyles-caption-296"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal is being vetted by the parties.
+          </span>
+        </div>
+      </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root makeStyles-arrow-155"
+        class="MuiSvgIcon-root makeStyles-arrow-183"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -152,11 +265,28 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
           fill="none"
         />
       </svg>
-      <span
-        class="MuiTypography-root makeStyles-inactive-261 makeStyles-acceptedStatus-265 MuiTypography-overline MuiTypography-gutterBottom"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-activeCard-289 makeStyles-inactive-290 makeStyles-acceptedStatus-294 MuiPaper-rounded"
       >
-        Accepted
-      </span>
+        <div
+          class="MuiCardContent-root makeStyles-content-295"
+        >
+          <span
+            class="MuiTypography-root makeStyles-inactive-290 makeStyles-acceptedStatus-294 MuiTypography-overline"
+          >
+            Accepted
+          </span>
+        </div>
+        <div
+          class="MuiCardContent-root makeStyles-content-295 makeStyles-caption-296"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            Proposal has been accepted and become an agreement.
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
